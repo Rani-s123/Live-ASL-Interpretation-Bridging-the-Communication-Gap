@@ -1,7 +1,3 @@
-Here’s a revised and well-structured version of your project write-up, suitable for including in a GitHub `README.md` file or any professional documentation:
-
----
-
 # Real-Time American Sign Language (ASL) Fingerspelling Recognition using CNN
 
 ## 📝 Abstract
@@ -155,7 +151,3 @@ python /path/to/Application.py
 ## 🙌 Final Thoughts
 
 This project demonstrates a practical solution for real-time ASL gesture recognition using deep learning, helping bridge the communication gap between D&M individuals and the rest of society.
-
----
-
-Would you like help designing a professional `README.md` layout with images and diagrams as well?
