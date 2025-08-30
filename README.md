@@ -151,3 +151,4 @@ python /path/to/Application.py
 ## 🙌 Final Thoughts
 
 This project demonstrates a practical solution for real-time ASL gesture recognition using deep learning, helping bridge the communication gap between D&M individuals and the rest of society.
+
