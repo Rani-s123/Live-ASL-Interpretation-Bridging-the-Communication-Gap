@@ -1,8 +1,14 @@
+Perfect 👍 You can embed your **demo video link** into the README in a clean way. Here’s your updated README with the YouTube link included:
+
+---
+
 # Real-Time American Sign Language (ASL) Fingerspelling Recognition using CNN
 
 ## 📝 Abstract
 
-American Sign Language (ASL) is one of the most natural and expressive forms of communication used by the Deaf and Mute (D&M) community. However, due to a lack of widespread understanding and limited availability of interpreters, communication can be challenging. This project presents a **real-time ASL fingerspelling recognition system** using **Convolutional Neural Networks (CNNs)** that identifies static hand gestures corresponding to the 26 English alphabets with **98.0% accuracy**.
+American Sign Language (ASL) is one of the most natural and expressive forms of communication used by the Deaf and Mute (D\&M) community. However, due to a lack of widespread understanding and limited availability of interpreters, communication can be challenging. This project presents a **real-time ASL fingerspelling recognition system** using **Convolutional Neural Networks (CNNs)** that identifies static hand gestures corresponding to the 26 English alphabets with **98.0% accuracy**.
+
+🎥 **Project Demo Video:** [Watch on YouTube](https://youtu.be/_HDyktbTDPQ)
 
 ---
 
@@ -10,31 +16,32 @@ American Sign Language (ASL) is one of the most natural and expressive forms of 
 
 ### 👋 Motivation
 
-Communication is a fundamental human need. D&M individuals rely on hand gestures for daily communication, but the barrier arises when interacting with those unfamiliar with sign language. Our goal is to bridge this gap using a computer vision-based solution that can interpret ASL fingerspelling in real time.
+Communication is a fundamental human need. D\&M individuals rely on hand gestures for daily communication, but the barrier arises when interacting with those unfamiliar with sign language. Our goal is to bridge this gap using a computer vision-based solution that can interpret ASL fingerspelling in real time.
 
 ---
 
 ## 💡 Key Features
 
-- Real-time hand gesture recognition using webcam input.
-- ROI (Region of Interest) detection and preprocessing using Gaussian blur and adaptive thresholding.
-- Custom CNN model trained on a self-generated dataset.
-- GUI for live translation of signs into text.
-- Multiple classifiers for improved accuracy in ambiguous gesture classification.
+* Real-time hand gesture recognition using webcam input.
+* ROI (Region of Interest) detection and preprocessing using Gaussian blur and adaptive thresholding.
+* Custom CNN model trained on a self-generated dataset.
+* GUI for live translation of signs into text.
+* Multiple classifiers for improved accuracy in ambiguous gesture classification.
 
 ---
 
 ## 🔧 Tech Stack
 
-- **Programming Language**: Python 3.8+
-- **Libraries**:
-  - OpenCV
-  - TensorFlow
-  - Keras
-  - NumPy
-  - Pillow
-  - Tkinter
-  - pyenchant & cyhunspell (for spell-check and suggestions)
+* **Programming Language**: Python 3.8+
+* **Libraries**:
+
+  * OpenCV
+  * TensorFlow
+  * Keras
+  * NumPy
+  * Pillow
+  * Tkinter
+  * pyenchant & cyhunspell (for spell-check and suggestions)
 
 ---
 
@@ -42,9 +49,9 @@ Communication is a fundamental human need. D&M individuals rely on hand gestures
 
 ### 1️⃣ Dataset Preparation
 
-- Created a custom dataset with separate folders for each alphabet (A-Z) under `trainingData` and `testingData`.
-- Images captured from webcam with a defined **Region of Interest (ROI)**.
-- Applied preprocessing: grayscale conversion → Gaussian blur → adaptive thresholding.
+* Created a custom dataset with separate folders for each alphabet (A-Z) under `trainingData` and `testingData`.
+* Images captured from webcam with a defined **Region of Interest (ROI)**.
+* Applied preprocessing: grayscale conversion → Gaussian blur → adaptive thresholding.
 
 ```python
 # Example code snippet for preprocessing
@@ -64,13 +71,13 @@ def preprocess_image(path):
 
 ### 2️⃣ CNN Model Architecture
 
-- **Input Layer**: 128x128 grayscale images.
-- **Convolutional Layers**: Detect local patterns.
-- **Pooling Layers**: Reduce dimensionality (Max & Average Pooling).
-- **Fully Connected Layers**: Classify based on extracted features.
-- **Output Layer**: 26 nodes (A–Z), softmax activation.
+* **Input Layer**: 128x128 grayscale images.
+* **Convolutional Layers**: Detect local patterns.
+* **Pooling Layers**: Reduce dimensionality (Max & Average Pooling).
+* **Fully Connected Layers**: Classify based on extracted features.
+* **Output Layer**: 26 nodes (A–Z), softmax activation.
 
-**Loss Function**: Cross-entropy  
+**Loss Function**: Cross-entropy
 **Optimizer**: Adam (Adaptive Moment Estimation)
 
 ---
@@ -79,10 +86,11 @@ def preprocess_image(path):
 
 Certain gestures are visually similar and may be misclassified. To address this:
 
-- Built **three specialized classifiers** for subsets of confusing gestures:
-  - `{D, R, U}`
-  - `{T, K, D, I}`
-  - `{S, M, N}`
+* Built **three specialized classifiers** for subsets of confusing gestures:
+
+  * `{D, R, U}`
+  * `{T, K, D, I}`
+  * `{S, M, N}`
 
 This two-layer classification approach improved accuracy from **95.8% → 98.0%**.
 
@@ -90,18 +98,19 @@ This two-layer classification approach improved accuracy from **95.8% → 98.0%*
 
 ### 4️⃣ GUI Application
 
-- A user-friendly GUI built with **Tkinter** allows:
-  - Real-time webcam input
-  - Gesture prediction display
-  - Text formation from sequences of signs
+* A user-friendly GUI built with **Tkinter** allows:
+
+  * Real-time webcam input
+  * Gesture prediction display
+  * Text formation from sequences of signs
 
 ---
 
 ## 📈 Results
 
-- **Accuracy (Single Classifier)**: 95.8%
-- **Accuracy (Multi-Classifier Ensemble)**: 98.0%
-- Displayed results using **confusion matrices** to evaluate performance per alphabet.
+* **Accuracy (Single Classifier)**: 95.8%
+* **Accuracy (Multi-Classifier Ensemble)**: 98.0%
+* Displayed results using **confusion matrices** to evaluate performance per alphabet.
 
 ---
 
@@ -127,7 +136,7 @@ User Gestures → Camera → Preprocessing → Classifier → Predicted Characte
 
 ### Prerequisites
 
-- Python 3.8 or higher
+* Python 3.8 or higher
 
 ### Required Packages
 
@@ -150,5 +159,10 @@ python /path/to/Application.py
 
 ## 🙌 Final Thoughts
 
-This project demonstrates a practical solution for real-time ASL gesture recognition using deep learning, helping bridge the communication gap between D&M individuals and the rest of society.
+This project demonstrates a practical solution for real-time ASL gesture recognition using deep learning, helping bridge the communication gap between D\&M individuals and the rest of society.
 
+🎥 **Demo Video:** [https://youtu.be/\_HDyktbTDPQ](https://youtu.be/_HDyktbTDPQ)
+
+---
+
+Would you like me to also create a **clickable video thumbnail** (so the YouTube preview image shows directly in your README)?
